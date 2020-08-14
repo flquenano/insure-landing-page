@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+// Breakpoints
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+// Colors
+$primary-dark-violet: hsl(256, 26%, 20%);
+$primary-grayish-blue: hsl(216, 4%, 68%);
+$neutral-very-dark-violet: hsl(270, 9%, 17%);
+$neutral-dark-grayish-violet: hsl(273, 4%, 51%);
+$neutral-light-gray: hsl(0, 0%, 98%);
+$neutral-line: #e4e4e4;
+
+$font-heading: "DM Serif Display", serif;
+$font-body: "Karla", sans-serif;
+$font-size: 16px;
+$font-regular: 400;
+$font-bold: 700;
+
+html {
+  box-sizing: border-box;
+  font-size: $font-size;
+  font-family: $font-body;
+}
+
+body,
+h1,
+h2,
+h3,
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  line-height: 1.5rem;
+  color: $primary-grayish-blue;
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom Breakpoint
+@mixin rwd($screen) {
+  @media (min-width: $screen+"px") {
+    @content;
+  }
+}

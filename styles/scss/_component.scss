@@ -1,0 +1,38 @@
+.heading {
+  font-family: $font-heading;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.heading {
+  font-family: $font-heading;
+  font-weight: $font-regular;
+  line-height: 3rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid $neutral-light-gray;
+  color: $neutral-light-gray;
+  background-color: transparent;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn-cta {
+  margin-top: 2.75rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  word-spacing: 0.25rem;
+  letter-spacing: 0.05rem;
+}
